@@ -2,7 +2,7 @@ class Zproxy < Formula
   desc "Proxy local requests like localhost:8888 to jupyter.z"
   homepage "https://gitlab.com/amedeedabo/zproxy"
   url "https://gitlab.com/amedeedabo/zproxy/-/archive/v0.2.0/zproxy-v0.2.0.tar.gz"
-  checksum "9ff25a1795d2490dc2624038059c4401a4f7af7d62232025f98ee813f1df1cba"
+  sha256 "9ff25a1795d2490dc2624038059c4401a4f7af7d62232025f98ee813f1df1cba"
   license "MIT"
 
   depends_on "go" => :build
