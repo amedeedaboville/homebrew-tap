@@ -12,6 +12,9 @@ class Zproxy < Formula
   end
 
   service do
+    error_log_path var/"log/zproxy.log"
+    log_path var/"log/zproxy.log"
+
     # TODO: don't keep alive if user config is broken
     run bin/"zproxy"
     keep_alive true
