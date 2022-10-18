@@ -1,8 +1,8 @@
 class Zoxy < Formula
   desc "Proxy local requests like localhost:8888 to jupyter.z"
   homepage "https://gitlab.com/amedeedabo/zoxy"
-  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.3.0/zoxy-v0.3.0.tar.gz"
-  sha256 "66ee259416917483d0247bacde4d41d431a403db73ac062972f8964e6d3d8417"
+  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.4.0/zoxy-v0.4.0.tar.gz"
+  sha256 "3ec9a9cb5f5940c2d567fd22c30f3cf29d809acf120e5b0b68d31bcf4aee0abb"
   license "MIT"
 
   depends_on "go" => :build
@@ -21,10 +21,12 @@ class Zoxy < Formula
   end
 
   test do
+    system bin/"zoxy" "config path"
     # TODO: run with bad config and expect it to stop itself
     # system bin/"zoxy" "--config=<(bad_config)"
     # or add --noDNS and --proxyPort options to be able to
     # start it without sudo
+
     true
   end
 end
