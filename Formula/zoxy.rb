@@ -1,8 +1,8 @@
 class Zoxy < Formula
   desc "Proxy local requests like localhost:8888 to jupyter.z"
   homepage "https://gitlab.com/amedeedabo/zoxy"
-  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.4.0/zoxy-v0.4.0.tar.gz"
-  sha256 "3ec9a9cb5f5940c2d567fd22c30f3cf29d809acf120e5b0b68d31bcf4aee0abb"
+  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.5.0/zoxy-v0.5.0.tar.gz"
+  sha256 "21c33decdfe10555f518b79e3dcb0f4b21c6d11b719550b64aa75effe88913b1"
   license "MIT"
 
   depends_on "go" => :build
