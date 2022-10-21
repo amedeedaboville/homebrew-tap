@@ -1,8 +1,8 @@
 class Zoxy < Formula
   desc "Proxy local requests like localhost:8888 to jupyter.z"
   homepage "https://gitlab.com/amedeedabo/zoxy"
-  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.5.0/zoxy-v0.5.0.tar.gz"
-  sha256 "21c33decdfe10555f518b79e3dcb0f4b21c6d11b719550b64aa75effe88913b1"
+  url "https://gitlab.com/amedeedabo/zoxy/-/archive/v0.6.0/zoxy-v0.6.0.tar.gz"
+  sha256 "5e862ae3eae3dea8a7c9c64a21e5d9b8da73ac28e647eaea7456bf6e5d282066"
   license "MIT"
 
   depends_on "go" => :build
@@ -12,6 +12,7 @@ class Zoxy < Formula
   end
 
   service do
+    environment_variables XDG_CONFIG_HOME: ENV["XDG_CONFIG_HOME"]
     error_log_path var/"log/zoxy.log"
     log_path var/"log/zoxy.log"
 
